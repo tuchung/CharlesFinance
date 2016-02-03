@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="mainApp">
   <head>
     <meta charset="utf-8">
     <title>Charles Financial LLC</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
+    <script src="scripts/mainScript.js"></script>
+    <div class="container">
+      <div class="jumbotron" id="title">
+        <h1 id="titleText">Charles Financial LLC</h1>
+      </div>
+    </div>
   </head>
-  <body>
-<nav class="navbar navbar-default">
+  <body ng-controller="mainController">
+<header>
+<nav class="navbar navbar-inverse">
   <div class="container">
     <div class="navbar-header">
       <a class="navbar-brand" href="/">Charles Financial LLC </a>
     </div>
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav">
       <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
-      <li><a href="#"><i class="fa fa-user"></i>About</a></li>
+      <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
     </ul>
   </div>
 </nav>
+</header>
+  <div id="main">
+    <div ng-view></div>
+  </div>
   </body>
 </html>
