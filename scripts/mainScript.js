@@ -18,6 +18,6 @@ mainApp.controller('mainController', function($scope){
     $scope.message = "This Website provide service for user to file their tax.";
 });
 
-mainApp.controller('aboutController', function($scope){
+mainApp.controller('contactController', function($scope){
   $scope.message = "My name is Charles Pier and I am a accountant professor";
 });
