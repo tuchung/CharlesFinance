@@ -10,4 +10,16 @@
 }
 body {
   background-image: url("../images/defaultbackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#main{
+  margin: auto;
+  width: 60%;
+  border: 3px solid;
+  padding: 10px;
+}
+.fixed{
+  position: fixed;
+  top: 0;
 }
